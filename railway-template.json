@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vergissberlin/railway/main/docs/railway-template.schema.json",
+  "schemaVersion": 1,
+  "project": "railwayapp-mysql",
+  "repo": "vergissberlin/railwayapp-mysql",
+  "displayName": "MySQL",
+  "publishedCode": "mysql-vb",
+  "image": "https://raw.githubusercontent.com/vergissberlin/railwayapp-mysql/main/template-header.svg",
+  "description": "Run MySQL 8 on Railway with Docker image and root password env.",
+  "workspaceAutomation": false
+}
