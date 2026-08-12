@@ -6,6 +6,15 @@ Deploy MySQL 8 on Railway with the official Docker image. This template gives yo
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/mysql-vb?referralCode=2_sIT9&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
+## 🏗️ Architecture
+
+```mermaid
+flowchart LR
+    Client(["📦 App / Client"]) -->|"MySQL Protocol"| Proxy["Railway TCP Proxy"]
+    Proxy -->|"$PORT → 3306"| App["Container\nmysql:8.4"]
+    App --> Volume[("Volume\n/var/lib/mysql")]
+```
+
 ## Environment
 
 | Variable | Required | Description |
