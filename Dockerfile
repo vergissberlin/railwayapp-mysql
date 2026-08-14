@@ -1,4 +1,4 @@
-FROM mysql:8.4
+FROM mysql:26.7
 
 # curl is required by docker-entrypoint-wrapper.sh for the optional
 # first-init dump import (MYSQL_INIT_DUMP_URL). mysql:8.4 is built on
