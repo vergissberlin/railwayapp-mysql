@@ -21,6 +21,9 @@ flowchart LR
 |----------|----------|-------------|
 | `MYSQL_ROOT_PASSWORD` | Yes | Root password for MySQL |
 
+> [!IMPORTANT]
+> Set `MYSQL_ROOT_PASSWORD` (as a generated secret) in the Railway dashboard **before** the first deploy. On an uninitialized database, the container fails fast with a message pointing back here rather than starting without a password.
+
 ## Optional
 
 | Variable | Description |
