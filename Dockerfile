@@ -1,4 +1,12 @@
-FROM mysql:26.7
+FROM mysql:8.4
+
+# curl is required by docker-entrypoint-wrapper.sh for the optional
+# first-init dump import (MYSQL_INIT_DUMP_URL). mysql:8.4 is built on
+# Oracle Linux 9 (oraclelinux9-slim) and uses microdnf, not apt/apk.
+# gzip is already installed by the upstream image (used for its native
+# *.sql.gz support), reused here for our own compression detection.
+RUN if ! command -v curl >/dev/null 2>&1; then microdnf install -y curl-minimal; fi \
+ && microdnf clean all
 
 ENV MYSQL_DATABASE=app
 
