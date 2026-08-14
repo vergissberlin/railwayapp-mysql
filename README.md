@@ -29,6 +29,11 @@ flowchart LR
 | Variable | Description |
 |----------|-------------|
 | `MYSQL_DATABASE` | Initial database name (default `app`) |
+| `MYSQL_INIT_DUMP_URL` | HTTPS URL to a `.sql` or gzip-compressed `.sql.gz` dump; downloaded and imported automatically, but only on the first start of an empty volume. Takes precedence over `MYSQL_INIT_DUMP_BASE64` if both are set. |
+| `MYSQL_INIT_DUMP_BASE64` | Same dump, base64-encoded and pasted directly as the variable value. Ignored if `MYSQL_INIT_DUMP_URL` is also set. Best for small dumps only. |
+
+> [!NOTE]
+> `MYSQL_INIT_DUMP_URL`/`MYSQL_INIT_DUMP_BASE64` are only ever consulted on the very first start against a brand-new, empty volume. Once the database has initialized, both variables are silently ignored on every later restart or redeploy — even if you leave them set. The dump runs with full administrative privileges during bootstrap, so only point these at dumps from sources you trust.
 
 ## Persistence
 
