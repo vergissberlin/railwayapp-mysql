@@ -5,7 +5,8 @@
   "repo": "vergissberlin/railwayapp-mysql",
   "displayName": "MySQL",
   "publishedCode": "mysql-vb",
-  "image": "https://raw.githubusercontent.com/vergissberlin/railwayapp-mysql/main/template-header.svg",
+  "image": "https://raw.githubusercontent.com/vergissberlin/railwayapp-mysql/main/logo-mysql.svg",
   "description": "Run MySQL 8 on Railway with Docker image and root password env.",
-  "workspaceAutomation": false
+  "workspaceAutomation": false,
+  "logoFile": "logo-mysql.svg"
 }
