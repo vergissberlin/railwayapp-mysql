@@ -2,5 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "description": "MySQL major upgrades change the on-disk format of existing volumes; require manual approval.",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["mysql"],
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    }
   ]
 }
