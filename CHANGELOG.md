@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.1](https://github.com/vergissberlin/railwayapp-mysql/compare/v0.2.0...v0.2.1) (2026-10-28)
+
+
+### Documentation
+
+* fix Railway deploy button link and add template forum link ([#18](https://github.com/vergissberlin/railwayapp-mysql/issues/18)) ([658d4d8](https://github.com/vergissberlin/railwayapp-mysql/commit/658d4d86767e185012999a36cd1f5e2fb2fcaf30))
+
+
+### Chores
+
+* **deps:** update mysql docker tag to v26.10.0 ([#17](https://github.com/vergissberlin/railwayapp-mysql/issues/17)) ([d9f331a](https://github.com/vergissberlin/railwayapp-mysql/commit/d9f331a5c72626b0ac915205ce579d7979a6af08))
+
 ## [0.2.0](https://github.com/vergissberlin/railwayapp-mysql/compare/v0.1.1...v0.2.0) (2026-10-21)
 
 
