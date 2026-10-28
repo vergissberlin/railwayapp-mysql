@@ -4,7 +4,7 @@
 
 Deploy MySQL 8 on Railway with the official Docker image. This template gives you a ready-to-run relational database for application data, background jobs, or as a shared backing store for other services in your project. It ships with sane defaults, a built-in health check, and guidance for attaching persistent storage so your data survives redeploys.
 
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/mysql-vb?referralCode=2_sIT9&utm_medium=integration&utm_source=template&utm_campaign=generic)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/mysql-1?referralCode=2_sIT9&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 ## 🏗️ Architecture
 
@@ -45,6 +45,10 @@ flowchart LR
 docker build -t railwayapp-mysql .
 docker run --rm -e MYSQL_ROOT_PASSWORD=dev -p 3306:3306 railwayapp-mysql
 ```
+
+## 💬 Support
+
+Questions or feedback? Visit the [template forum on Railway Central Station](https://station.railway.com/templates/my-sql-e6649876).
 
 <!-- footer -->
 ---
