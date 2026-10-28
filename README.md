@@ -46,6 +46,10 @@ docker build -t railwayapp-mysql .
 docker run --rm -e MYSQL_ROOT_PASSWORD=dev -p 3306:3306 railwayapp-mysql
 ```
 
+## 💬 Support
+
+Questions or feedback? Visit the [template forum on Railway Central Station](https://station.railway.com/templates/my-sql-e6649876).
+
 <!-- footer -->
 ---
 
